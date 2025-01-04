@@ -1,5 +1,5 @@
-import TimelineModule from "@/components/modules/TimelineModule";
+import { PortfolioModule } from "@/components/modules";
 
 export default function Home() {
-  return <TimelineModule />;
+  return <PortfolioModule />;
 }
