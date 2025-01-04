@@ -7,5 +7,6 @@ export interface Project {
   description: string;
   images: string[];
   stack: string[];
-  repoUrl: string;
+  repoUrl?: string;
+  docsUrl?: string;
 };

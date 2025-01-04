@@ -32,6 +32,7 @@ export const PortfolioModule = () => {
       images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
       stack: ["React", "TypeScript", "Node"],
       repoUrl: "https://github.com/yourusername/project1",
+      docsUrl: "https://google.com",
     },
     {
       title: "Project 1",
