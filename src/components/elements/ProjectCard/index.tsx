@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import { FaGithub } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { getTechnologyIcon } from "@/lib/react-utils";
 import { ProjectCardProps } from "./interface";
+import { TechnologyIcon } from "../TechnologyIcon";
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const sliderSettings = {
@@ -42,7 +42,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <p className="mb-4">{project.description}</p>
           <div className="flex items-center gap-3 mb-4">
             {project.stack.map((tech, idx) => (
-              <div key={tech}>{getTechnologyIcon(tech)}</div>
+              <div key={tech}>
+                <TechnologyIcon technology={tech} />
+              </div>
             ))}
           </div>
           <a
