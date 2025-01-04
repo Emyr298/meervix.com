@@ -70,3 +70,14 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.project-slider .slick-slide {
+  opacity: 0.3;
+  filter: grayscale(50%) blur(1px);
+  transition: all 0.3s ease;
+}
+
+.project-slider .slick-current {
+  opacity: 1;
+  filter: none;
+}

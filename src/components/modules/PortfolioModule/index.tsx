@@ -1,50 +1,50 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaInstagram,
-  FaMedium,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ProjectCard } from "@/components/elements";
 
 export const PortfolioModule = () => {
   const [activeTab, setActiveTab] = useState("projects");
 
   const projects = [
-    { title: "Project 1", description: "Description of project 1" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 1", description: "Description of project 1" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 1", description: "Description of project 1" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    { title: "Project 2", description: "Description of project 2" },
-    // ...more projects
+    {
+      title: "Featured Project",
+      description: "This is a featured project that spans the full width",
+      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
+      stack: ["React", "TypeScript", "Node"],
+      repoUrl: "https://github.com/yourusername/featured-project",
+      featured: true,
+    },
+    {
+      title: "Project 1",
+      description: "Description of project 1",
+      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
+      stack: ["React", "TypeScript", "Node"],
+      repoUrl: "https://github.com/yourusername/project1",
+    },
+    {
+      title: "Project 1",
+      description: "Description of project 1",
+      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
+      stack: ["React", "TypeScript", "Node"],
+      repoUrl: "https://github.com/yourusername/project1",
+    },
+    {
+      title: "Project 1",
+      description: "Description of project 1",
+      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
+      stack: ["React", "TypeScript", "Node"],
+      repoUrl: "https://github.com/yourusername/project1",
+    },
   ];
 
   const achievements = [
     { title: "Achievement 1", description: "Description of achievement 1" },
     { title: "Achievement 2", description: "Description of achievement 2" },
-    // ...more achievements
   ];
 
   return (
@@ -97,7 +97,7 @@ export const PortfolioModule = () => {
         </div>
       </div>
 
-      <div className="sticky top-0 bg-white shadow-md w-full">
+      <div className="sticky top-0 bg-white shadow-md w-full z-50">
         <nav className="flex justify-center space-x-4 py-4">
           <button
             onClick={() => setActiveTab("projects")}
@@ -113,19 +113,14 @@ export const PortfolioModule = () => {
           </button>
         </nav>
       </div>
-      <div className="mt-8 w-full">
+
+      <div className="mt-8 w-full max-w-7xl px-4">
         {activeTab === "projects" ? (
-          <div className="space-y-8">
+          <>
             {projects.map((project, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="w-1 bg-gray-300 h-full"></div>
-                <div>
-                  <h2 className="text-2xl font-bold">{project.title}</h2>
-                  <p>{project.description}</p>
-                </div>
-              </div>
+              <ProjectCard key={index} project={project} />
             ))}
-          </div>
+          </>
         ) : (
           <div className="space-y-8">
             {achievements.map((achievement, index) => (
