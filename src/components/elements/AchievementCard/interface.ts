@@ -1,5 +1,5 @@
 export interface AchievementCardProps {
-  achievement: Achievement
+  achievement: Achievement;
 }
 
 export interface Achievement {
@@ -7,4 +7,4 @@ export interface Achievement {
   description: string;
   images: string[];
   writeupUrl?: string;
-};
+}

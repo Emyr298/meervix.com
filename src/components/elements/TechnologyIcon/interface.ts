@@ -1,3 +1,3 @@
 export interface TechnologyIconProps {
-  technology: string
+  technology: string;
 }

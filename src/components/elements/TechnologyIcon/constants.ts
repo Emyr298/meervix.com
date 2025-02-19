@@ -3,9 +3,26 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { FaReact, FaNode, FaPython, FaDocker } from "react-icons/fa";
 import { FaGolang, FaJava } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiTypescript, SiNextdotjs, SiSpringboot, SiGodotengine, SiRabbitmq, SiFastapi, SiGooglegemini, SiGooglecloud, SiSonar, SiSonarqube, SiDjango, SiFlutter, SiJquery, SiDart } from "react-icons/si";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiSpringboot,
+  SiGodotengine,
+  SiRabbitmq,
+  SiFastapi,
+  SiGooglegemini,
+  SiGooglecloud,
+  SiSonarqube,
+  SiDjango,
+  SiFlutter,
+  SiJquery,
+  SiDart,
+} from "react-icons/si";
 
-export const TECHNOLOGY_MAP: Record<string, React.ComponentType<{ className: string }>> = {
+export const TECHNOLOGY_MAP: Record<
+  string,
+  React.ComponentType<{ className: string }>
+> = {
   React: FaReact,
   Node: FaNode,
   TypeScript: SiTypescript,

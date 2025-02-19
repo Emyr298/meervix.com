@@ -125,11 +125,11 @@ export const PortfolioModule = () => {
         </h1>
         <span className="block text-center text-xl">Software Engineer</span>
         <p className="text-center mt-2">
-          I'm a Software Engineer specializing in Golang, Java, and Python, with
-          expertise in PostgreSQL, MongoDB, and cloud platforms like GCP and
-          AWS. Currently, I'm exploring real-time streaming infrastructures
-          using Apache Flink and Kafka. Other than developing, I also enjoy
-          doing CTFs, focusing on Web Exploitation and Cryptography.
+          I&apos;m a Software Engineer specializing in Golang, Java, and Python,
+          with expertise in PostgreSQL, MongoDB, and cloud platforms like GCP
+          and AWS. Currently, I&apos;m exploring real-time streaming
+          infrastructures using Apache Flink and Kafka. Other than developing, I
+          also enjoy doing CTFs, focusing on Web Exploitation and Cryptography.
         </p>
         <div className="flex justify-center gap-4 mt-4">
           <a

@@ -1,5 +1,5 @@
 export interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 
 export interface Project {
@@ -10,4 +10,4 @@ export interface Project {
   repoUrl?: string;
   docsUrl?: string;
   videoUrl?: string;
-};
+}
