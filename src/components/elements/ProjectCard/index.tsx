@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaYoutube } from "react-icons/fa";
 import { ProjectCardProps } from "./interface";
 import { TechnologyIcon } from "../TechnologyIcon";
 import { CustomSlider } from "../CustomSlider";
@@ -20,6 +20,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       icon: <FaGithub />,
       text: "View Documentation",
       url: project.docsUrl,
+    });
+  if (project.videoUrl)
+    links.push({
+      icon: <FaYoutube />,
+      text: "View Presentation",
+      url: project.videoUrl,
     });
 
   return (

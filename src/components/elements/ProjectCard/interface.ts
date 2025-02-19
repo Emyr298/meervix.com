@@ -9,4 +9,5 @@ export interface Project {
   stack: string[];
   repoUrl?: string;
   docsUrl?: string;
+  videoUrl?: string;
 };

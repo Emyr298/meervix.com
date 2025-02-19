@@ -13,34 +13,65 @@ export const PortfolioModule = () => {
 
   const projects = [
     {
-      title: "Featured Project",
-      description: "This is a featured project that spans the full width",
-      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
-      stack: ["React", "TypeScript", "Node"],
-      repoUrl: "https://github.com/yourusername/featured-project",
+      title: "Pixel Tactics",
+      description:
+        "Multiplayer turn-based game with real-time communication and async processing.",
+      images: [
+        "/pixel-tactics-1.png",
+        "/pixel-tactics-3.png",
+        "/pixel-tactics-2.png",
+      ],
+      stack: [
+        "Golang",
+        "Godot",
+        "Java",
+        "SpringBoot",
+        "PostgreSQL",
+        "RabbitMQ",
+      ],
+      repoUrl: "https://github.com/pixel-tactics",
       featured: true,
     },
     {
-      title: "Project 1",
-      description: "Description of project 1",
-      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
-      stack: ["React", "TypeScript", "Node"],
-      repoUrl: "https://github.com/yourusername/project1",
+      title: "Chefies",
+      description:
+        "Recipe recommender app where you can discover recipes based on ingredients in photo, leveraging Gemini AI and YOLOv8.",
+      images: ["/chefies1.png", "/chefies2.png"],
+      stack: [
+        "Python",
+        "FastAPI",
+        "Gemini",
+        "Firestore",
+        "GCP",
+        "React",
+        "TypeScript",
+      ],
+      repoUrl: "https://github.com/chefies",
+      videoUrl: "https://www.youtube.com/watch?v=N20cg4RKtwY",
     },
     {
-      title: "Project 1",
-      description: "Description of project 1",
-      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
-      stack: ["React", "TypeScript", "Node"],
-      repoUrl: "https://github.com/yourusername/project1",
-      docsUrl: "https://google.com",
+      title: "Atmos Store",
+      description:
+        "Games and Apps Store where developers can publish their apps with microservice architecture.",
+      images: ["/atmos.png", "/atmos.png"],
+      stack: [
+        "Java",
+        "Springboot",
+        "PostgreSQL",
+        "SonarQube",
+        "Docker",
+        "React",
+        "NextJS",
+      ],
+      repoUrl: "https://github.com/AtmosGame",
     },
     {
-      title: "Project 1",
-      description: "Description of project 1",
-      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
-      stack: ["React", "TypeScript", "Node"],
-      repoUrl: "https://github.com/yourusername/project1",
+      title: "Buzzar ID",
+      description:
+        "Multi-platform application where small business can promote their products. It supports web and mobile UI.",
+      images: ["/buzzar-1.png", "/buzzar-1.png"],
+      stack: ["Python", "Django", "PostgreSQL", "Flutter", "Dart", "JQuery"],
+      repoUrl: "https://github.com/PBP22-23-C-11",
     },
   ];
 
@@ -58,7 +89,6 @@ export const PortfolioModule = () => {
       description:
         "Ranked 1st nationally, 3rd internationally. The competition was organized by PwC Indonesia.",
       images: ["/pwc1.jpg", "/pwc1.jpg"],
-      // writeupUrl: "https://github.com/yourusername/writeup-ctf-1",
     },
     {
       title: "3rd Winner of TECHCOMFEST CTF 2024",
@@ -95,10 +125,11 @@ export const PortfolioModule = () => {
         </h1>
         <span className="block text-center text-xl">Software Engineer</span>
         <p className="text-center mt-2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          I'm a Software Engineer specializing in Golang, Java, and Python, with
+          expertise in PostgreSQL, MongoDB, and cloud platforms like GCP and
+          AWS. Currently, I'm exploring real-time streaming infrastructures
+          using Apache Flink and Kafka. Other than developing, I also enjoy
+          doing CTFs, focusing on Web Exploitation and Cryptography.
         </p>
         <div className="flex justify-center gap-4 mt-4">
           <a
@@ -153,11 +184,11 @@ export const PortfolioModule = () => {
             ))}
           </>
         ) : (
-          <div className="space-y-8">
+          <>
             {achievements.map((achievement, index) => (
               <AchievementCard key={index} achievement={achievement} />
             ))}
-          </div>
+          </>
         )}
       </div>
     </div>
