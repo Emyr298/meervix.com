@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ProjectCard } from "@/components/elements";
+import { AchievementCard } from "@/components/elements/AchievementCard";
 
 export const PortfolioModule = () => {
   const [activeTab, setActiveTab] = useState("projects");
@@ -44,8 +45,18 @@ export const PortfolioModule = () => {
   ];
 
   const achievements = [
-    { title: "Achievement 1", description: "Description of achievement 1" },
-    { title: "Achievement 2", description: "Description of achievement 2" },
+    {
+      title: "Achievement 1",
+      description: "Description of achievement 1",
+      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
+      writeupUrl: "https://github.com/yourusername/writeup-ctf-1",
+    },
+    {
+      title: "Achievement 2",
+      description: "Description of achievement 2",
+      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
+      writeupUrl: "https://github.com/yourusername/writeup-ctf-1",
+    },
   ];
 
   return (
@@ -125,13 +136,7 @@ export const PortfolioModule = () => {
         ) : (
           <div className="space-y-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="w-1 bg-gray-300 h-full"></div>
-                <div>
-                  <h2 className="text-2xl font-bold">{achievement.title}</h2>
-                  <p>{achievement.description}</p>
-                </div>
-              </div>
+              <AchievementCard key={index} achievement={achievement} />
             ))}
           </div>
         )}
