@@ -46,16 +46,35 @@ export const PortfolioModule = () => {
 
   const achievements = [
     {
-      title: "Achievement 1",
-      description: "Description of achievement 1",
-      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
-      writeupUrl: "https://github.com/yourusername/writeup-ctf-1",
+      title: "Champion of TECHCOMFEST CTF 2025",
+      description:
+        "Ranked 1st nationally. The competition was organized by Politeknik Negeri Semarang.",
+      images: ["/techcomfest3.jpg", "/techcomfest4.jpg"],
+      writeupUrl:
+        "https://docs.google.com/document/d/1DUS-4e2lQtLQTbEROW41LjAb107GoyCE4AdDba8JXP0/edit?usp=sharing",
     },
     {
-      title: "Achievement 2",
-      description: "Description of achievement 2",
-      images: ["/avatar.jpg", "/avatar.jpg", "/avatar.jpg"],
-      writeupUrl: "https://github.com/yourusername/writeup-ctf-1",
+      title: "Champion of Hack A Day CTF 2024 in Indonesia",
+      description:
+        "Ranked 1st nationally, 3rd internationally. The competition was organized by PwC Indonesia.",
+      images: ["/pwc1.jpg", "/pwc1.jpg"],
+      // writeupUrl: "https://github.com/yourusername/writeup-ctf-1",
+    },
+    {
+      title: "3rd Winner of TECHCOMFEST CTF 2024",
+      description:
+        "Ranked 3rd nationally. The competition was organized by Politeknik Negeri Semarang.",
+      images: ["/techcomfest1.jpg", "/techcomfest2.jpg"],
+      writeupUrl:
+        "https://docs.google.com/document/d/17vZ481iKIHOezyl1wFENNRn3o69trOiy7afW3u3uF4E/edit?usp=sharing",
+    },
+    {
+      title: "3rd Winner of ITToday CTF 2024",
+      description:
+        "Ranked 3rd nationally. The competition was organized by Politeknik Negeri Semarang.",
+      images: ["/ittoday1.jpg", "/ittoday2.jpg"],
+      writeupUrl:
+        "https://docs.google.com/document/d/1aS2549jZx_fwRguFGAD090xVRYZLnV2bvmKYGQSIeyc/edit?usp=sharing",
     },
   ];
 
